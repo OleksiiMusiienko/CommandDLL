@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MessengerModel;
+using System.Runtime.Serialization;
 
 namespace CommandDLL
 {
@@ -15,7 +17,7 @@ namespace CommandDLL
         public string command { get; set; }
 
         public ServerResponse() { }
-        public ServerResponse(List<User> us, Commands com)
+        public ServerResponse(List<User> us, string com)
         {
             list = us;
             command = com;
