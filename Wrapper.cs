@@ -16,12 +16,14 @@ namespace CommandDLL
         public User user { get; set; }
         [DataMember]
         public Commands commands { get; set; }
-        
+        [DataMember]
+        public string NewPassword { get; set; }
         public Wrapper() { }
-        public Wrapper(User user, Commands commands)
+        public Wrapper(User user, Commands commands, string newPassword)
         {
             this.user = user;
             this.commands = commands;
+            this.NewPassword = newPassword;
         }
     }
 }
