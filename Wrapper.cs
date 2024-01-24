@@ -11,7 +11,7 @@ namespace CommandDLL
     [DataContract]
     public class Wrapper
     {
-        public enum Commands {Registratioin, Authorization, Redact, Remove }
+        public enum Commands {Registratioin, Authorization, Redact, Remove , Exit }
         [DataMember]
         public User user { get; set; }
         [DataMember]
