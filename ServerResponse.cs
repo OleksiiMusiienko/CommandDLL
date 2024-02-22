@@ -12,14 +12,17 @@ namespace CommandDLL
     public class ServerResponse
     {
         [DataMember]
-        public List<User> list=new List<User>();
+        public List<User> list = new List<User>();
+        [DataMember]
+        public List<User> lisеFrends = new List<User>();
         [DataMember]
         public string command { get; set; }
 
         public ServerResponse() { }
-        public ServerResponse(List<User> us, string com)
+        public ServerResponse(List<User> us, List<User> usFrends, string com)
         {
             list = us;
+            lisеFrends = usFrends;
             command = com;
         }
     }
