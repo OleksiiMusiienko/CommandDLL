@@ -14,7 +14,7 @@ namespace CommandDLL
         [DataMember]
         public List<User> list = new List<User>();
         [DataMember]
-        public List<User> lisеFrends = new List<User>();
+        public List<User> listFrends = new List<User>();
         [DataMember]
         public string command { get; set; }
 
@@ -22,7 +22,7 @@ namespace CommandDLL
         public ServerResponse(List<User> us, List<User> usFrends, string com)
         {
             list = us;
-            lisеFrends = usFrends;
+            listFrends = usFrends;
             command = com;
         }
     }
