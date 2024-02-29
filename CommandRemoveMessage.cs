@@ -7,9 +7,9 @@ using System.Windows.Input;
 
 namespace MessengerPigeon.Command
 {
-    public class RequestMessageHistory : ICommand
+    public class CommandRemoveMessage : ICommand
     {
-        public RequestMessageHistory(Action<object> execute, Predicate<object> canExecute)
+        public CommandRemoveMessage(Action<object> execute, Predicate<object> canExecute)
         {
             if (execute == null)
                 throw new ArgumentNullException("execute");
