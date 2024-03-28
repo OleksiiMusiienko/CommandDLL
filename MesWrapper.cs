@@ -13,6 +13,8 @@ namespace CommandDLL
     {
         [DataMember]
         public int len { get; set; }
+        [DataMember]
+        public Message Mes { get; set; }
         public MesWrapper() { }
     }
 }
